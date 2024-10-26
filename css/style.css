@@ -25,7 +25,30 @@
 
 
 /* ------- Seccion de introduccion ------- */
+.custom-intro {
+    background-color: #f4f9fd;
+    padding: 100px 0;
+}
+.custom-intro h1 {
+    color: #2c3e50;
+    font-weight: bold; 
+    margin-bottom: 20px;
+}
+.custom-intro p {
+    color: #7f8c8d;
+}
+.custom-intro .btn-primary {
+    background-color: #1abc9c;
+}
+.custom-intro .btn-primary:hover {
+    background-color: #16a085;
+}
 
+.img-fluid{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
 
 /* ------- Seccion de nosotro ------- */
 #features{
