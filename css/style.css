@@ -51,6 +51,20 @@
 }
 
 /* ------- Seccion de nosotro ------- */
+#about {
+    padding: 60px 0; /* Espacio vertical en la sección */
+    background-color: #ffffff; /* Fondo blanco */
+}
+#about h2 {
+    color: #2c3e50; /* Color del título de la sección */
+}
+#about p {
+    color: #7f8c8d; /* Color del texto descriptivo */
+    max-width: 800px; /* Ancho máximo del texto */
+    margin: auto; /* Centra el texto */
+}
+
+/* ------- Seccion de caracteristica ------- */
 #features{
     background-color: #f8f9fa;
     padding: 60px 0;
@@ -62,23 +76,107 @@
     margin-bottom: 15px;
 }
 
-/* ------- Seccion de caracteristica ------- */
-
-
 /* ------- Seccion de testimonio ------- */
-
+#testimonials {
+    padding: 60px 0; /* Espacio vertical en la sección */
+}
+.testimonial {
+    padding: 20px; /* Espacio interno para la tarjeta de testimonio */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra ligera para dar profundidad */
+    background-color: #fff; /* Fondo blanco */
+    transition: transform 0.3s; /* Suaviza el efecto de escalado al pasar el cursor */
+}
+.testimonial:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+}
+.testimonial img {
+    border-radius: 50%; /* Hace que las imágenes de los testimonios sean circulares */
+}
+.blockquote-footer {
+    color: #7f8c8d; /* Color del nombre del autor en el testimonio */
+}
 
 /* ------- Seccion de equipo ------- */
-
+#team .card {
+    border: none; /* Sin borde en las tarjetas del equipo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las tarjetas */
+    transition: transform 0.3s; /* Suaviza el efecto de escalado al pasar el cursor */
+}
+#team .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el cursor */
+}
+#team .card img {
+    width: 100px; /* Ancho de la imagen del perfil del equipo */
+    height: 100px; /* Alto de la imagen del perfil del equipo */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+#team .card-title {
+    color: #2c3e50; /* Color del nombre del miembro del equipo */
+    font-weight: bold; /* Nombre en negrita */
+}
 
 /* ------- Seccion de contact ------- */
-
+#contact {
+    padding: 60px 0; /* Espacio vertical en la sección */
+    background-color: #f9f9f9; /* Fondo claro */
+}
 
 /* ------- Seccion de foote ------- */
-
+footer {
+    background-color: #333; /* Fondo oscuro para el pie de página */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0; /* Espacio vertical en el pie de página */
+}
+footer a {
+    color: #1abc9c; /* Color de los enlaces en el pie de página */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+footer a:hover {
+    color: #16a085; /* Cambia el color del enlace al pasar el cursor */
+}
 
 /* ------- Boton volver al principio ------- */
-
+#backToTopBtn {
+    display: none; /* Oculto inicialmente */
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px; /* Distancia desde el fondo */
+    right: 30px; /* Distancia desde el lado derecho */
+    z-index: 99; /* Por encima de otros elementos */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    background-color: #1abc9c; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Manito para indicar clic */
+    padding: 15px; /* Tamaño del botón */
+    border-radius: 50%; /* Forma circular */
+    font-size: 18px; /* Tamaño del ícono */
+}
+#backToTopBtn:hover {
+    background-color: #16a085; /* Color al pasar el cursor */
+}
 
 /* ------- Media queries ------- */
-
+@media (max-width: 768px) {
+    .custom-intro h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título en pantallas medianas */
+    }
+    .custom-intro .btn-primary {
+        font-size: 1rem; /* Ajusta el tamaño del botón en pantallas medianas */
+    }
+    #features .col-md-4, #testimonials .col-md-4 {
+        margin-bottom: 20px; /* Espacio entre elementos en pantallas medianas */
+    }
+}
+@media (max-width: 576px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem; /* Espacio entre los elementos de la barra de navegación en pantallas pequeñas */
+    }
+    .custom-intro {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+    .custom-intro img {
+        margin-bottom: 20px; /* Espacio debajo de la imagen en pantallas pequeñas */
+    }
+}
